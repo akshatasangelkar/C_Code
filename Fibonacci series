@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main()
+{
+int sum=0,first=1,second=1,n=5,i;
+printf("%d\t%d\t",first,second);
+for(i=0;i<n-2;i++)
+{
+    sum=first+second;
+    first=second;
+    second=sum;
+    printf("%d\t",sum);
+}
+
+}
