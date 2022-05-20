@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+int start=100,end=999,i,prod=1,p,num;
+for(start;start<=end;start++)
+{
+    int sum=0;
+    num=start;
+    while(num>0)
+    {
+       p=num%10;
+       prod=p*p*p;
+       sum=sum+prod;
+       num=num/10;
+       
+    }
+    
+    if(start==sum)
+    {
+       printf("%d\n",start);
+    }
+    
+}
+
+}
