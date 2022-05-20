@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+int num,j=1,a,sum=0;
+printf("Enter binary number which contain 0 and 1:  " );
+scanf("%d",&num);
+while(num!=0)
+{
+    a=num%10;
+    sum+=a *j;
+    num=num/10;
+    j*=2;
+    
+}
+printf("Decimal number is %d", sum);
+}
