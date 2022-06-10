@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int arr[]={2,6,9,1,0,100,78,54,77,-1};
+    int i,j,temp;
+    for(i=0,j=9;i<j;i++,j--)
+    {
+        temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    for(i=0;i<10;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+  return 0;
+}
